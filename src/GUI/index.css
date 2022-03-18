@@ -1,0 +1,49 @@
+.root {
+    -fx-background-color: #fff;
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 12px;
+    -fx-padding: 10px 25px;
+}
+
+.label {}
+
+.text-field {
+    -fx-border-insets: 2px;
+    -fx-border-radius: 3px;
+    -fx-background-insets: 2px;
+    -fx-padding: 5px 10px;
+    -fx-border-color: #264653;
+    -fx-border-width: 1px;
+    -fx-cursor: text;
+}
+
+.imageView {
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+    -fx-border-color: #264653;
+    -fx-border-width: 1px;
+
+}
+.button {
+    -fx-border-radius: 3px;
+    -fx-border-color: #264653;
+    -fx-border-width: 1px;
+    -fx-padding: 5px 10px;
+    -fx-background-color: #264653;
+    -fx-max-width: 150px;
+    -fx-cursor: hand;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+    -fx-text-fill: #fff;
+}
+
+.button:hover {
+    -fx-background-color: #356d84;
+    -fx-border-color: #356d84;
+}
+
+.name {
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-color: #264653;
+    -fx-border-width: 1px;
+}

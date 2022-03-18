@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="pathTxtFld" editable="false" focusTraversable="false" mouseTransparent="true" prefHeight="26.0" prefWidth="663.0" promptText="Path" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" />
+        <TextField fx:id="userInputTxtFld" promptText="Name" GridPane.columnSpan="2" />
+        <!-- <Button fx:id="showContentBtn" mnemonicParsing="false" onMouseClicked="#showContent" text="Show Content" GridPane.columnIndex="7" GridPane.rowIndex="7" /> -->
+        <Button fx:id="saveBtn" mnemonicParsing="false" onMouseClicked="#save" text="Save" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+        <ImageView fx:id="imageViewTile" fitHeight="279.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView" GridPane.columnIndex="3" GridPane.rowIndex="4" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" />
+
+        <Button fx:id="switchImagesBtn" mnemonicParsing="false" onMouseClicked="#switchImages" text="Switch Images" GridPane.rowIndex="5" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets top="3.0" />
+            </GridPane.margin></Button>
+        <Label fx:id="nameLabel" prefHeight="18.0" prefWidth="102.0" styleClass="name" GridPane.columnIndex="3" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
+        <Button fx:id="updateBtn" mnemonicParsing="false" onMouseClicked="#updateInfo" text="Update Info" GridPane.rowIndex="2" />
+        <GridPane GridPane.columnSpan="4" GridPane.rowIndex="8">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="effectsBtn" disable="true" mnemonicParsing="false" onMouseClicked="#effectsWindow" opacity="0.2" text="Effects" />
+                <Button fx:id="slideshowBtn" mnemonicParsing="false" onMouseClicked="#slideshow" text="Slideshow" GridPane.columnIndex="1" />
+                <Button fx:id="gridBtn" mnemonicParsing="false" onMouseClicked="#grid" text="Grid" GridPane.columnIndex="2" />
+                <Button fx:id="reverseBtn" mnemonicParsing="false" onMouseClicked="#reverse" text="Reverse Order" GridPane.columnIndex="3" />
+            </children>
+        </GridPane>
+        <GridPane GridPane.rowIndex="1">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="searchImageButton" mnemonicParsing="false" onMouseClicked="#searchImage" prefHeight="26.0" prefWidth="117.0" text="Search Image">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="removeImageButton" mnemonicParsing="false" onMouseClicked="#removeImage" text="Remove Image" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="addImageButton" mnemonicParsing="false" onMouseClicked="#addImage" prefHeight="26.0" prefWidth="119.0" text="Add Image" />
+                <Button fx:id="findImageButton" mnemonicParsing="false" onMouseClicked="#findImage" prefHeight="26.0" prefWidth="98.0" text="Find Image" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <GridPane GridPane.rowIndex="4">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="20.0" prefWidth="100.0" text="Image 1" GridPane.valignment="BOTTOM">
+                    <GridPane.margin>
+                        <Insets left="2.0" />
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="switchImageTxtFld1" promptText="Name 1" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="switchImageTxtFld2" prefHeight="20.0" promptText="Name 2" style="-fx-max-width: 100px;" GridPane.rowIndex="1" />
+                <Label prefHeight="20.0" text="Image 2" GridPane.valignment="BOTTOM">
+                    <padding>
+                        <Insets left="2.0" />
+                    </padding>
+                </Label>
+            </children>
+        </GridPane>
+      <Label fx:id="warningLabel" prefHeight="18.0" prefWidth="178.0" styleClass="name" textFill="RED" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    </children>
+</GridPane>
